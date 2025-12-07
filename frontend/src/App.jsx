@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://chetananile-fubotics-softwareai.onrender.com/";
 
 function App() {
   const [conversations, setConversations] = useState([]);

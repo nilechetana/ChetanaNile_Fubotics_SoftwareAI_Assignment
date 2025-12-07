@@ -74,6 +74,10 @@ app.post("/api/conversations", async (req, res) => {
 
 // GET: ek conversation ka saara chat history
 //  /api/messages?conversationId=xxxx
+app.get("/", (req, res) => {
+  res.send("Fubotics AI Chat backend is running 👍");
+});
+
 app.get("/api/messages", async (req, res) => {
   try {
     const { conversationId } = req.query;
